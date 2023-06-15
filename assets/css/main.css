@@ -374,8 +374,8 @@ h6 {
 .header .logo img {
   /*tamano logo principal*/
   max-height: 63px;
-  margin-right: 8px;
-  margin-bottom: 8px;
+  margin-right: 12px;
+  margin-bottom: 12px;
 }
 
 .header .logo h1 {
