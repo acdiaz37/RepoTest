@@ -20,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #fafafa;
-  --color-primary: #ffe998;
+  --color-primary: #c4942d;
   --color-secondary: #161718;
 }
 
@@ -35,7 +35,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
-  background-color: #000;
+  background-color: #fafafa;
 }
 
 a {
@@ -371,11 +371,15 @@ h6 {
   transition: 0.3s;
 }
 
+.header .a{
+  margin-left: 200px;
+}
+
 .header .logo img {
   /*tamano logo principal*/
-  max-height: 63px;
+  max-height:90px;  
   margin-right: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
 }
 
 .header .logo h1 {
@@ -570,7 +574,8 @@ h6 {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 0, 0, 0.9);
+    /* fondo mini navbar lateral */
+    background: white;
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -603,7 +608,7 @@ h6 {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: white;
   }
 
   .navbar .dropdown ul,
@@ -622,17 +627,19 @@ h6 {
   }
 
   .mobile-nav-show {
-    color: #fff;
+    /* hamburguesa para abrir mini navbar */  
+    color: brown;
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
     transition: 0.5s;
     z-index: 9999;
-    margin: 0 10px 0 10px;
+    margin: 0 1px 0 1px;
   }
 
   .mobile-nav-hide {
-    color: #fff;
+    /* x para cerrar mini navbar */
+    color: black;
     font-size: 32px;
     cursor: pointer;
     line-height: 0;
@@ -655,7 +662,7 @@ h6 {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(22, 23, 24, 0.8);
+    background: rgba(146, 146, 146, 0.553);
     z-index: 9996;
   }
 }
@@ -1262,7 +1269,17 @@ h6 {
   position: relative;
   padding: 140px 0 60px 0;
   margin-top: 20px;
+  /* poner una imagen de fondo */ 
+  background-image: url("assets\img\gallery\gallery-21.jpg");
 }
+
+/* media query para que toda pantalla menor de 768px centre todo el contenido */
+@media (max-width: 1000px) {
+  .hero {
+    text-align: center;
+  }
+}
+
 
 .hero h2 {
   margin: 0 0 10px 0;
@@ -1270,6 +1287,28 @@ h6 {
   font-weight: 700;
   color: #fff;
   font-family: var(--font-secondary);
+}
+.videoreduce{
+  max-width: 300px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .videoreduce{
+    max-width: 150px;
+    width: 100%;
+  }
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  
+  .hero video {
+    height: 50%;
+  }
 }
 
 .hero h2 span {
@@ -1289,7 +1328,7 @@ h6 {
   /*background: var(--color-primary);
   change this to your color
   */
-  background: var(--color-secondary);
+  background: var(--color-primary);
   z-index: -1;
 }
 

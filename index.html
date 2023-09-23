@@ -40,30 +40,34 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center fixed-top"
+  style="background-color: white;
+  border-bottom: 5px solid gray;      
+  "
+  >
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->        
-        <img src="assets\img\png\LOGO.png" alt="">        
-        <img src="assets\svg\bg-inverted-brand2.svg" alt="Mistico Cafe" />
+        <img src="assets\img\justlogowhite.png" alt="">        
+        <img src="assets\img\png\letrasmistico.png" alt="Mistico Cafe" />
 
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Inicio</a></li>
-          <li><a href="about.html">Acerca de</a></li>          
-          <li><a href="services.html">Productos</a></li>
-          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="index.html" style="color: black;" class="active">Inicio</a></li>
+          <li><a href="about.html" style="color: black;" >Acerca de</a></li>          
+          <li><a href="services.html" style="color: black;" >Productos</a></li>
+          <li><a href="contact.html" style="color: black;" >Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
 
       <div class="header-social-links">
-        <a href="https://wa.me/573134592843" class="instagram"><i class="bi bi-whatsapp"></i></a>
-        <a href="tel:+573134592843" class="instagram"><i class="bi bi-telephone-forward"></i></a>
-        <a href="https://www.instagram.com/cafemistico_/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://wa.me/573134592843" class="instagram" style="color: black;" ><i class="bi bi-whatsapp"></i></a>
+        <a href="tel:+573134592843" class="instagram"><i class="bi bi-telephone-forward"  style="color: black;" ></i></a>
+        <a href="https://www.instagram.com/cafemistico_/" class="instagram"  style="color: black;" ><i class="bi bi-instagram"></i></a>
         
       </div>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -73,23 +77,43 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
+  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" 
+  data-aos="fade" data-aos-delay="1500"
+  style="background-color: white;"
+  >
 
     <!-- container1 -->
     <div class="container mt-4">
 
-      <div class="row gy-4 justify-content-center">
-        <div class="col-lg-4 align-items-center"
-        style="display: flex; justify-content: center;"
-        >
-          <div style="width: 75%;" class="align-items-center">
-            <img src="assets\img\gallery\misticofull.jpg" class="img-fluid rounded" alt="">
+      <div class="row gy-4 justify-content-center d-flex align-items-center">
+        <div class="col-lg-4 align-items-center">
+          <div class="align-items-center">
+           <!--  <img src="assets\img\mistico_logo_nuevo.jpg" 
+            class="img-fluid rounded" 
+            style="border: 2px solid gray;"
+            alt=""
+          > -->
+          <video 
+          class="videoreduce"      
+          autoplay loop muted controls="false"
+          >
+            <source src="assets\videos\variedadesmistico.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+          </video>
           </div>
         </div>
         <div class="col-lg-5 content">
-          <h2><span style="color: #ffff; font-size: 150%;">Místico</span> - Descubre la esencia mística del café Tolimense</h2>
-          <p>Sumérgete en el misticismo de nuestro café, donde la tradición se entrelaza con la naturaleza. En Místico, honramos nuestras raíces cafeteras y te invitamos a disfrutar de la esencia auténtica de la finca Santo Domingo.</p>
-          <a href="about.html" class="btn-get-started">Descubre nuestra magia</a>           
+          <h2
+          style="color: black;"
+          ><span style="color: black; font-size: 150%;">
+              Místico
+          </span>- Descubre la esencia mística del café Tolimense</h2>
+          <p 
+          style="color: black;"
+          >Sumérgete en el misticismo de nuestro café, donde la tradición se entrelaza con la naturaleza. En Místico, honramos nuestras raíces cafeteras y te invitamos a disfrutar de la esencia auténtica de la finca Santo Domingo.</p>
+          <div class="justify-content-center">
+            <a href="about.html" class="btn-get-started">Descubre nuestra magia</a>           
+          </div>
         </div>
       </div>
 
@@ -99,8 +123,48 @@
 
     
   </section><!-- End Hero Section -->
+  <!-- ======= Pricing Section ======= -->
+  <section id="pricing" class="pricing">
+    <div class="container">
 
-  <main id="main" data-aos="fade" data-aos-delay="1500">
+      <div class="section-header">
+        <h2
+        style="color: black;"
+        >Nuestro Producto</h2>
+        <p
+        style="color: black;"
+        >Precios en Variedades Castillo y Caturra</p>
+      </div>
+
+      <div class="row gy-4 gx-lg-5">
+
+        <div class="col-lg-6">
+          <div class="pricing-item d-flex justify-content-between">
+            <h3
+            style="color: black;"
+            >Libra Grano Entero o Molido 500g</h3>
+            <h4
+            style="color: black;"
+            >$35.000</h4>
+          </div>
+        </div><!-- End Pricing Item -->
+
+        <div class="col-lg-6">
+          <div class="pricing-item d-flex justify-content-between">
+            <h3
+            style="color: black;"
+            >Media Libra Grano Entero</h3>
+            <h4
+            style="color: black;"
+            >$22.000</h4>
+          </div>
+        </div><!-- End Pricing Item -->
+
+
+      </div>
+  </section><!-- End Pricing Section -->
+
+  <main id="main" data-aos="fade" data-aos-delay="100">   
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
@@ -121,6 +185,15 @@
               <img src="assets/img/gallery/media_mistico (2).jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
                 <a href="assets/img/gallery/media_mistico (2).jpg" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets\img2\mistico1.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets\img2\mistico1.jpg" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -152,6 +225,16 @@
               </div>
             </div>
           </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets\img2\mistico2.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets\img2\mistico2.jpg" title="Gallery 5" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
               <img src="assets/img/gallery/media_mistico (5).jpg" class="img-fluid" alt="">
@@ -190,63 +273,18 @@
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="assets/img/gallery/picture (9).jpg" class="img-fluid" alt="">
+              <img src="assets\img2\mistico4.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/picture (9).jpg" title="Gallery 10" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets\img2\mistico4.jpg" title="Gallery 11" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="assets/img/gallery/picture (10).jpg" class="img-fluid" alt="">
+              <img src="assets\img2\mistico3.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/picture (10).jpg" title="Gallery 11" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/picture (11).jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/picture (11).jpg" title="Gallery 12" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/picture (12).jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/picture (12).jpg" title="Gallery 13" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/pngpicture (1).png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/pngpicture (1).png" title="Gallery 14" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/picture (4).jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/picture (4).jpg" title="Gallery 15" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/picture (15).jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/picture (15).jpg" title="Gallery 16" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets\img2\mistico3.jpg" title="Gallery 12" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -260,7 +298,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+  <footer id="footer" class="footer bg-dark">
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>Místico Cafe</span></strong>. Vía Santa Isabel - Tolima      
